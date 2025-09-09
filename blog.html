@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blog website</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+            }
+            header{
+                background-color: rgb(121, 97, 177);
+            }
+            nav{
+                :hover{
+                    background-color: blue;
+                    font-size: 20px;
+                }
+            }
+
+            a {
+                padding: 10px;
+            }
+            h1, h2 ,h3{
+                font-family:'playfair display',serif;
+
+            }
+            .font1 {
+                font-family:'parcifico',cursive;
+                font-size: 2em;
+            }
+            .font2 {
+                font-family:'playfair display',serif;
+            }
+            .hero {
+                background-color: aqua;
+                color: rgb(17, 13, 115);
+                text-align: center;
+                padding: 100px 20px;
+            }
+            .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background: rgb(47, 31, 194);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    animation: ripple 0.6s linear;
+    transform: scale(0);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.blog-section {
+    padding: 60px 20px;
+    background: #371071;
+    text-align: center;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgb(19, 108, 149);
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+
+.categories {
+    padding: 50px 20px;
+    background: #eee;
+    text-align: center;
+}
+
+.circle-btn {
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.circle-btn:hover {
+    background: #555;
+    transform: scale(1.2);
+}
+
+
+.subscribe {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.subscribe input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.glow-btn {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.glow-btn:hover {
+    box-shadow: 0 0 20px #4facfe;
+}
+
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    animation: bounce 0.6s;
+}
+
+
+            
+
+        </style>
+    </head>
+    <body>
+       <header>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-LzYwaF1IYl37pSlfAnVCYTfv7ywtOudfig&s" width="20%"bredth="20%">
+<nav>
+
+   <a href="#">Home</a>
+<a href="#">Blog</a></li>
+<a href="#">Categories</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+        
+    
+</nav>
+        </div>
+       </header> 
+       <section id="Home"class="hero">
+        <h1><span class="font1">WELCOME TO ODISHA</span><span class="sacred place"></span></h1>
+        <button onclick="rippleeffect(event)">read vlog</button>
+
+    </section>
+    <section id="blog"class="blog-section">
+        <h2>Latest posts</h2>
+        <div class="blog-cards">
+            <div class="card">
+                <img src="https://ommcomnews.com/wp-content/uploads/2024/07/Thumb-66.jpg">
+                <h3>blog post one</h3>
+                <p>my first blog at Puri temple</p>
+            
+            <div>
+            <div class="blog-cards">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Lingaraj_Temple_complex_at_dusk_during_Shivratri_2020.jpg/500px-Lingaraj_Temple_complex_at_dusk_during_Shivratri_2020.jpg">
+                    <h3>blog post two</h3>
+                    <p>my second blog at Lingaraj temple</p>
+                    </div>
+            
+                    
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcCWMMYJp_rL50uEIKto6PKiORl8m0650HQ&s">
+                        <p>my second blog at Lingaraj temple</p>
+</div>
+                </div>
+        
+        
+    </section>
+    <section id="categories" class="categories">
+        <h2>Categories</h2>
+        <div class="category-buttons">
+            <button class="circle-btn">Tech</button>
+            <button class="circle-btn">Life</button>
+            <button class="circle-btn">Travel</button>
+            <button class="circle-btn">Food</button>
+        </div>
+    </section>
+    
+    
+    <section class="subscribe">
+        <h2>Subscribe to our Newsletter</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit" class="glow-btn">Subscribe</button>
+        </form>
+    </section>
+    
+    
+    <footer>
+        <div class="social-icons">
+            <span class="icon">🌐</span>
+            <span class="icon">📘</span>
+            <span class="icon">📸</span>
+        </div>
+        <p>© 2025 MyBlog. All rights reserved.</p>
+    </footer>
+       
+    </body>
+</html>
